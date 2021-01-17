@@ -36,7 +36,7 @@
   box-sizing: border-box;
 }
 
-/* Typography 
+/* Typography */
 
 h1 {
   font-size: var(--font-large);
@@ -65,4 +65,3 @@ p {
   color: var(--color-black);
   margin: 4px 0;
 }
-*/
