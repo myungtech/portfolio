@@ -54,7 +54,7 @@
         <button class="home__contact">Contact Me</button>
     </section>
     <!-- ** About ** -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>계속 끊임없이 성장과 도전을 멈추지 않는 개발자 박진명입니다.</p>
         <div class="about__majors">
@@ -62,7 +62,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript, TypeScript,
                     <br />React, Web APIs
@@ -72,7 +72,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Mobile</div>
+                <h2 class="major__title">Mobile</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript, TypeScript,
                     <br>React, Web APIs
@@ -82,7 +82,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Back-end</div>
+                <h2 class="major__title">Back-end</h2>
                 <div class="major__description">
                     Java, Node.js
                     <br>React, Web APIs
@@ -92,121 +92,129 @@
         <div class="about__jobs">
             <div class="job">
                 <img src="#" alt="untilnow" class="job__logo">
-                <p class="job__name">mystudy</p>
-                <p class="job__period">2020.08 ~</p>
+                <div class="job__description">
+                    <p class="job__name">mystudy</p>
+                    <p class="job__period">2020.08 ~</p>
+                </div>
             </div>
             <div class="job">
                 <img src="imgs/jobs/celldio.jpg" alt="celldio" class="job__logo">
-                <p class="job__name">CELLDIO</p>
-                <p class="job__period">2020.01 ~ 2020.08</p>
+                <div class="job__description">
+                    <p class="job__name">CELLDIO</p>
+                    <p class="job__period">2020.01 ~ 2020.08</p>
+                </div>
             </div>
             <div class="job">
                 <img src="imgs/jobs/mirae.png" alt="mirae" class="job__logo">
-                <p class="job__name">미래능력개발교육원</p>
-                <p class="job__period">2019.03 ~ 2019.12 </p>
+                <div class="job__description">
+                    <p class="job__name">미래능력개발교육원</p>
+                    <p class="job__period">2019.03 ~ 2019.12 </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- ** Skills ** -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable of
-            working
-            within a team environment and independently. Ability to plan and time schedule. work under strict time
-            pressure and
-            adapt quickly when needed.</p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>HTML</span>
-                        <span>90%</span>
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable of
+                working
+                within a team environment and independently. Ability to plan and time schedule. work under strict time
+                pressure and
+                adapt quickly when needed.</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JAVASCRIPT</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>TYPESCRIPT</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>REACT</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>NODEJS</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JAVA</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar" >
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>CSS</span>
-                        <span>90%</span>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Eclipse</span></li>
+                            <li><span>Android Studio</span></li>
+                            <li><span>DBeaver</span></li>
+                            <li><span>Oracle</span></li>
+                        </ul>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>GitHub</span></li>
+                            <li><span>SVN</span></li>
+                            <li><span>Watch Youtube</span></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>JAVASCRIPT</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>TYPESCRIPT</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>REACT</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>NODEJS</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>JAVA</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Eclipse</span></li>
-                        <li><span>Android Studio</span></li>
-                        <li><span>DBeaver</span></li>
-                        <li><span>Oracle</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>GitHub</span></li>
-                        <li><span>SVN</span></li>
-                        <li><span>Watch Youtube</span></li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <!-- ** Work ** -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -228,7 +236,7 @@
 
     </section>
     <!-- ** Testimonials 추천 글 ** -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -253,16 +261,16 @@
         </div>
     </section>
     <!-- ** Contact ** -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">wlsaud1992@gmail.com</h2>
         <div class="contact__links">
             <a href="https://github.com/myungtech" title="link:Github" target="_blank">
                 <i class="fab fa-github"></i>
-            </a> 
+            </a>
             <a href="#" title="link:#" target="_blank">
                 <i class="fa fa-linkedin-square"></i>
-            </a> 
+            </a>
             <p class="contact__rights">
                 2021 MyungTech ( ◍•㉦•◍ ) - All rights reserved
             </p>
