@@ -125,6 +125,15 @@ p {
   background-color: var(--color-dark-blue);
 }
 
+.navbar__toggle-btn {
+  /* 기존 자리에서 빠져나와 포지션이 되는 것 */
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
 /* Home */
 
 #home {
@@ -424,4 +433,40 @@ p {
 .contact__links i:hover {
   transform: scale(1.2);
   color: var(--color-dark-grey);
+}
+
+/* media query 최소한의 차이점이 뽑아진 아이들만 들어가야한다. */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    /* 왼쪽정렬 */
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .about__majors {
+    flex-direction: column;
+  }
+  .major {
+    margin-bottom: 38px;
+  }
+  .skillset {
+    flex-direction: column;
+  }
+  .project {
+    /* 화면이 작으면 딱 맞게 커지도록 */
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
