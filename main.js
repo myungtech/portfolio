@@ -55,6 +55,21 @@ home.style.opacity = 1 - window.scrollY / homeHeight;
 
 });
 
+// "Show arrow up" button when scrolling down (스크롤링이 되면 나타나게)
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll',()=>{
+    // 현재 스크롤 상태가 home의 절반 높이를 넘어 섰을때
+    if(window.scrollY > homeHeight/2){  
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+});
+
+//Handle click on the "arrow up" button
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#home');
+});
 
 
 

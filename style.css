@@ -442,6 +442,27 @@ p {
   transform: scale(1.2);
   color: var(--color-dark-grey);
 }
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  /* 클릭 금지 */
+  pointer-events: none;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* media query 최소한의 차이점이 뽑아진 아이들만 들어가야한다. */
 @media screen and (max-width: 768px) {
