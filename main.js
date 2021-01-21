@@ -35,11 +35,28 @@ navbarMenu.addEventListener('click',(event)=>{
     scrollIntoView(link);
 });
 
-//Handel click on "contact me" buttom on home
+// Handle click on "contact me" buttom on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click',(event)=>{
     scrollIntoView('#contact');
 });
+
+// Make home slowly fade to transparent as the window scrolls down
+// home의 요소가져옴
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll',()=>{
+
+// console.log(`homeHeight>>> ${homeHeight}`);
+// console.log(1 - window.scrollY / homeHeight);
+// opacity >> 0(투명) 1(불투명)
+
+home.style.opacity = 1 - window.scrollY / homeHeight;
+
+});
+
+
+
 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
