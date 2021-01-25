@@ -71,6 +71,43 @@ arrowUp.addEventListener('click',()=>{
     scrollIntoView('#home');
 });
 
+//Projects
+//work 버튼들이 들어있는 컨테이너
+const workBtnContainer = document.querySelector('.work__categories');
+//프로젝트가 들어있는 컨테이너
+const projectContainer = document.querySelector('.work__projects');
+//각각의 프로젝트들을 배열로 전부의 프로젝트를
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click',(e) =>{
+const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+
+if(filter == null){
+    return;
+}
+
+projectContainer.classList.add('anim-out');
+
+//0.3초가 지나고 settimeout안에 함수 실행
+    setTimeout(() =>{
+        //projects array의 아이템들을 foreach하나당 각각 번갈아 가면서 하나씩!
+    projects.forEach((project) =>{
+        // console.log(project.dataset.type);
+        
+        //all이거나 filter가 project에 있는 dataset.type이 똑같으면
+        if(filter ==='*'||filter ===project.dataset.type){
+            //프로젝트의 클래스 제거
+            project.classList.remove('invisible');
+        }else{
+            project.classList.add('invisible');
+        }
+    });
+
+        projectContainer.classList.remove('anim-out');
+    
+    },300);
+
+});
 
 
 function scrollIntoView(selector){
