@@ -20,6 +20,9 @@ document.addEventListener('scroll',()=>{
     }   
 });
 
+
+
+
 // Handle scrolling when tapping on the navbar menu
 // 클릭했을때 원하는 아이디를 알아야한다.
 const navbarMenu = document.querySelector('.navbar__menu');
@@ -32,7 +35,15 @@ navbarMenu.addEventListener('click',(event)=>{
         return;
     }
     // console.log(event.target.dataset.link);
+    navbarMenu.classList.remove('open'); //메뉴를 눌러서 지점으로 가면 창이 닫힐수 있도록
     scrollIntoView(link);
+});
+
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+navbarMenu.classList.toggle('open');
+
 });
 
 // Handle click on "contact me" buttom on home
