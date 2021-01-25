@@ -86,6 +86,13 @@ if(filter == null){
     return;
 }
 
+//Remove selection from the previous item and select the new one
+const active = document.querySelector('.category__btn.selected');
+active.classList.remove('selected');
+// 노드이름이 버튼이면 그냥 타겟 but 아니라면( span 이라면) 부모노드 버튼으로 타겟
+const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+target.classList.add('selected');
+
 projectContainer.classList.add('anim-out');
 
 //0.3초가 지나고 settimeout안에 함수 실행
